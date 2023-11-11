@@ -10,7 +10,8 @@ private:
 public:
     void createAccount() {
         cout << "Enter name: ";
-        cin >> name;
+        cin.ignore();
+        getline(cin,name);
         cout << "Enter account number: ";
         cin >> accountNumber;
         cout << "Enter initial balance: ";
