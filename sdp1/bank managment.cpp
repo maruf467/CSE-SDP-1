@@ -3,8 +3,8 @@ using namespace std;
 
 class Account {
 private:
-    string name;
-    int accountNumber;
+    string name,Mail;
+    int accountNumber,Number,Date;
     float balance;
 
 public:
@@ -16,6 +16,13 @@ public:
         cin >> accountNumber;
         cout << "Enter initial balance: ";
         cin >> balance;
+        cout<<"Enter Your Phone Number:";
+        cin>>Number;
+        cout<<"Enter Your Mail:";
+        cin>>Mail;
+        cout<<"Date:";
+         cin>>Date;
+
     }
 
     void deposit() {
